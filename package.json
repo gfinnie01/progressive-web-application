@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start:dev": "",
-    "start": "",
+    "start": "webpack --watch",
     "server": "",
     "build": "",
     "install": "",
