@@ -11,12 +11,18 @@ module.exports = () => {
       main: './src/js/index.js',
       install: './src/js/install.js'
     },
+    devServer: {
+      hot: 'only',
+    },
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      
+      new HtmlWebpackPlugin({
+        title: 'Client Server',
+        template: './index.html',
+      })
     ],
 
     module: {
